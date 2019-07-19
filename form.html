@@ -7,9 +7,117 @@
     <title>Document</title>
 </head>
 <body>
-    <p><center>Hello World!</center></p>
-    <nav>
-        <a href="index.html">Back</a>
-    </nav>
+    <header>
+
+    </header>
+    <article>
+        <h1><center>Опитування!</center></h1>
+        <p>Шановний учасник опитування, просимо вас відповісти на представлені нижче питання. Ваші відповіді допоможуть в організації міжнародної конференції "Психологія моральності: XXI століття".
+        </p>
+        <form method="POST" action="https://formspree.io/beschasnuy96@gmail.com">
+            <label>1. Ваша стать</label>
+            <label><input type="radio" name="1. Ваша стать" value="чоловік">чоловік</label>
+            <label><input type="radio" name="1. Ваша стать" value="жінка">жінка</label>
+            <br>
+            <label>2. Ваш вік</label>
+            <label><input type="radio" name="2. Ваш вік" value="молодше 18 років">молодше 18 років</label>
+            <label><input type="radio" name="2. Ваш вік" value="18-25 року">18-25 року</label>
+            <label><input type="radio" name="2. Ваш вік" value="26-35 року">26-35 року</label>
+            <label><input type="radio" name="2. Ваш вік" value="старше 35 років">старше 35 років</label>
+            <br>
+            <label for="simple">3. Ваша освіта:</label>
+            <select id="simple" name="3. Ваша освіта">
+            <option>Неповна середня</option>
+            <option>Середня</option>
+            <option>Неповна вища</option>
+            <option>Вища</option>
+            </select>
+            <br>
+            <label for="simple1">4. Яку релігію Ви сповідуєте:</label>
+            <select id="simple1" name="4. Яку релігію Ви сповідуєте">
+            <option>православ'я</option>
+            <option>католицизм</option>
+            <option>протестантизм</option>
+            <option>іудаїзм</option>
+            <option>іслам</option>
+            <option>атеїзм</option>
+            <option>агностицизм</option>
+            <option>інше</option>
+            </select>
+            <br>
+            <label for="bel">5. Наскільки Ви відносите себе до релігійних людей?</label>
+                <br>
+                    <input id="bel" type="range" min="1" max="10" step="1" value="5">
+            <br>
+            <label for="multi">6. Які, на Вашу думку, основні причини безробіття:</label>
+            <br>
+            Може бути кілька правильних варіантів(Для того щоб обрати кілька варіантів зажміть кнопку "Ctrl")
+            <br>
+            <select multiple id="multi" name="6. Які, на Вашу думку, основні причини безробіття">
+            <option>а) скорочення промислового виробництва</option>
+            <option>б) приплив мігрантів з ближнього зарубіжжя</option>
+            <option>в) поява зовсім нових галузей економіки, для яких важко підібрати кадри</option>
+            </select>
+            <br>
+            <label for="multi1">7. Які категорії людей сьогодні більше за інших схильні безробіттю?</label>
+            <br>
+            <select multiple id="multi1" name="7. Які категорії людей сьогодні більше за інших схильні безробіттю">
+            <option>а) молоді люди</option>
+            <option>б) люди середнього віку (від 30 до 40 років)</option>
+            <option>в) люди старшого віку (від 40 до 55 років)</option>
+            <option>г) пенсіонери</option>
+            </select>
+            <br>
+            <label for="final">8. Ваші плани після закінчення вузу:</label>
+            <br>
+            <input type="text" id="final" name="8. Ваші плани після закінчення вузу" list="answer">
+            <datalist id="answer">
+                <option>а) піду працювати</option>
+                <option>б) продовжу навчання у своєму вузі (магістратура, аспірантура)</option>
+                <option>в) збираюся отримати нову освіту в іншому вузі</option>
+                <option>г) піду служити в армію</option>
+            </datalist>
+            <br>
+            <label for="work">9. При працевлаштуванні ви розраховуєте на:</label>
+                <input type="text" id="work" name="9. При працевлаштуванні ви розраховуєте на" list="condit">
+
+            <datalist id="condit">
+                <label for="rody">вибери варіант</label>
+                <select id="rody" name="9. При працевлаштуванні ви розраховуєте на">
+                <option>а) сприяння родичів і друзів</option>
+                <option>б) допомогу навчального закладу</option>
+                <option>в) службу зайнятості</option>
+                <option>г) агентства з працевлаштування</option>
+                <option>д) власні здібності</option>
+                <option>е) сприятливий збіг обставин</option>
+                </select>
+            </datalist>
+            <br>
+            <label for="chr">10. Бажали б Ви пройти "післядипломну" стажування на підприємстві з імовірністю подальшого працевлаштування?</label>
+            <br>
+            <label><input type="checkbox" checked id="chr" name="10. Бажали б Ви пройти післядипломну стажування на підприємстві з імовірністю подальшого працевлаштування?" value="Так">Так</label>
+            <label><input type="checkbox" checked id="chr" name="10. Бажали б Ви пройти післядипломну стажування на підприємстві з імовірністю подальшого працевлаштування?" value="Ні">Ні</label>
+            <br>
+
+            <br>
+            <label>Ведіть Ваше ім'я:
+                <input type="text" placeholder="Ведіть Ваше ім'я" name="user-name">
+            </label>
+            <br>
+            <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email" name="user-email" required>
+            <br>
+            <input type="submit">
+            <br>
+            <button type="reset">
+                Стерти все
+            </button>
+        </form>
+    </article>
+    <footer>
+        <nav>
+            <a href="index.html">Back</a>
+        </nav>
+    </footer>
 </body>
 </html>
